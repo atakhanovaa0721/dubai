@@ -5,7 +5,7 @@ class Home(models.Model):
     nomi1 = models.CharField(max_length=100)
     nomi2 = models.CharField(max_length=100)
     text = models.TextField()
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi1
@@ -24,7 +24,7 @@ class Card(models.Model):
     estate = models.CharField(max_length=200)
     text = models.TextField()
     cap = models.CharField(max_length=200)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     def __str__(self):
         return self.emad
 
@@ -36,13 +36,13 @@ class Legal(models.Model):
     text1 = models.TextField()
     text2 = models.TextField()
     text3 = models.TextField()
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     def __str__(self):
         return self.nomi
     
 
 class Boshqsmi(models.Model):
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
 
 
 class SMS(models.Model):
@@ -56,7 +56,7 @@ class SMS(models.Model):
     
 class Projecti_Home(models.Model):
     title = models.CharField(max_length=200)
-    img = models.ImageField(upload_to='media/')
+    img = models.ImageField()
     
     def __str__(self):
         return self.title
@@ -65,7 +65,7 @@ class Projecti_Home(models.Model):
 class Project_Kard(models.Model):
     rnomi1 = models.CharField(max_length=300)
     rnomi2 = models.CharField(max_length=400)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     nomi1 = models.CharField(max_length=500)
     nomi2 = models.CharField(max_length=600)
     url = models.CharField(max_length=300)
@@ -75,7 +75,7 @@ class Project_Kard(models.Model):
     
     
 class Newsdagi_rasm(models.Model):
-    rasm = models.ImageField(upload_to='media/',verbose_name = "newsdagi headerdi tagidagi rasmni krting:")
+    rasm = models.ImageField(verbose_name = "newsdagi headerdi tagidagi rasmni krting:")
     
 class Newsdagi_rasmdi_tagdagi_sozlar(models.Model):
     title = models.CharField(max_length=300)
@@ -117,8 +117,8 @@ class Newsdagi_malumot_ongtomondagi(models.Model):
 class NewsdagiDeta(models.Model):
     title = models.CharField(max_length=200)
     titlesmal = models.CharField(max_length=200)
-    icon =  models.ImageField(upload_to='media/')
-    rasm = models.ImageField(upload_to='media/')
+    icon =  models.ImageField()
+    rasm = models.ImageField()
     nomi = models.CharField(max_length=200)
     nomi1 = models.CharField(max_length=200)
     ong1 = models.CharField(max_length=200)
@@ -190,15 +190,15 @@ class News_Butondi_Tepasdagi_matn(models.Model):
 
 
 class Portfolio(models.Model):
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
 
 class PdfHome(models.Model):
     nomi1 = models.CharField(max_length=200)
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -206,9 +206,9 @@ class PdfHome(models.Model):
     
 class PdfHome2(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -256,21 +256,21 @@ class PdfTxt(models.Model):
         return self.text1
 
 class PdfImg(models.Model):
-    img = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
-    img9 = models.ImageField(upload_to="media/")
-    img10 = models.ImageField(upload_to="media/")
+    img = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
+    img9 = models.ImageField()
+    img10 = models.ImageField()
     
 class PdfCard(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -278,7 +278,7 @@ class PdfCard(models.Model):
 class PdfCard7(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -288,7 +288,7 @@ class PdfCard7(models.Model):
 class PdfCard8(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -296,8 +296,8 @@ class PdfCard8(models.Model):
         return self.nomi1
     
 class PdfPast(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
     
 # pdf10 html modeli
 class Pdf8Home(models.Model):
@@ -305,8 +305,8 @@ class Pdf8Home(models.Model):
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -314,9 +314,9 @@ class Pdf8Home(models.Model):
     
 class PdfHome8(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -367,24 +367,24 @@ class PdfTxt8(models.Model):
         return self.text1
 
 class PdfImg8(models.Model):
-    img1 = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
+    img1 = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
     
     
 class Rasm8Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
     
 class PdfCard9(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -392,7 +392,7 @@ class PdfCard9(models.Model):
 class PdfCard0(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -402,8 +402,8 @@ class PdfCard0(models.Model):
   
   
 class PdfPast0(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
     
 # pdf3
 class Pdf3Home(models.Model):
@@ -411,8 +411,8 @@ class Pdf3Home(models.Model):
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -420,9 +420,9 @@ class Pdf3Home(models.Model):
     
 class PdfHome3(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -473,27 +473,27 @@ class PdfTxt3(models.Model):
         return self.text1
 
 class PdfImg3(models.Model):
-    img1 = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
+    img1 = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
     
     
 class Rasm3Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
 class Rasm33Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
     
 class PdfCard3(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -501,7 +501,7 @@ class PdfCard3(models.Model):
 class PdfCard03(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -511,8 +511,8 @@ class PdfCard03(models.Model):
   
   
 class PdfPast03(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
     
     
 #pdf4
@@ -521,8 +521,8 @@ class Pdf4Home(models.Model):
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -530,9 +530,9 @@ class Pdf4Home(models.Model):
     
 class PdfHome4(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -583,27 +583,27 @@ class PdfTxt4(models.Model):
         return self.text1
 
 class PdfImg04(models.Model):
-    img1 = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
+    img1 = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
     
     
 class Rasm4Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
 class Img44Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
     
 class PdfCard4(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -611,7 +611,7 @@ class PdfCard4(models.Model):
 class PdfCard04(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -621,8 +621,8 @@ class PdfCard04(models.Model):
   
   
 class PdfPast04(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
     
 # pdf5
 class Pdf5Home(models.Model):
@@ -630,8 +630,8 @@ class Pdf5Home(models.Model):
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -639,9 +639,9 @@ class Pdf5Home(models.Model):
     
 class Pdfooo545(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -692,23 +692,23 @@ class PdfTxt5(models.Model):
         return self.text1
 
 class PdfImg05(models.Model):
-    img1 = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
+    img1 = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
     
     
 class Rasm5Pdf(models.Model):
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
  
 class PdfCard05(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -716,7 +716,7 @@ class PdfCard05(models.Model):
 class PdfCard005(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -726,8 +726,8 @@ class PdfCard005(models.Model):
   
   
 class PdfPast005(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
     
     
 # pdf9 model
@@ -736,8 +736,8 @@ class PDF9HOMES(models.Model):
     nomi2 = models.CharField(max_length=299)
     nomi3 = models.CharField(max_length=299)
     baytxt = models.CharField(max_length=300)
-    baground_Rasm = models.ImageField(upload_to='media/')
-    rasm1 = models.ImageField(upload_to='media/')
+    baground_Rasm = models.ImageField()
+    rasm1 = models.ImageField()
     
     
     def __str__(self):
@@ -745,9 +745,9 @@ class PDF9HOMES(models.Model):
     
 class PDF9HOMES2(models.Model):
     ism_famlya = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to='media/')
+    rasm = models.ImageField()
     manzil = models.CharField(max_length=300)
-    ikonka1 = models.ImageField(upload_to='media/')
+    ikonka1 = models.ImageField()
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=399)
     tell_raqami = models.IntegerField()
@@ -798,20 +798,20 @@ class PdfTxt9(models.Model):
         return self.text1
 
 class PdfImg09(models.Model):
-    img1 = models.ImageField(upload_to="media/")
-    img2 = models.ImageField(upload_to="media/")
-    img3 = models.ImageField(upload_to="media/")
-    img4 = models.ImageField(upload_to="media/")
-    img5 = models.ImageField(upload_to="media/")
-    img6 = models.ImageField(upload_to="media/")
-    img7 = models.ImageField(upload_to="media/")
-    img8 = models.ImageField(upload_to="media/")
+    img1 = models.ImageField()
+    img2 = models.ImageField()
+    img3 = models.ImageField()
+    img4 = models.ImageField()
+    img5 = models.ImageField()
+    img6 = models.ImageField()
+    img7 = models.ImageField()
+    img8 = models.ImageField()
     
 
 class PdfCard009(models.Model):
     nomi = models.CharField(max_length=300)
     text = models.TextField()
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     
     def __str__(self):
         return self.nomi
@@ -819,7 +819,7 @@ class PdfCard009(models.Model):
 class PdFCaCrd9(models.Model):
     nomi1 = models.CharField(max_length=300)
     nomi2 = models.CharField(max_length=300)
-    rasm = models.ImageField(upload_to="media/")
+    rasm = models.ImageField()
     text1 = models.TextField()
     text2 = models.TextField()
     
@@ -829,5 +829,5 @@ class PdFCaCrd9(models.Model):
   
   
 class PdfPast009(models.Model):
-    rasm1 = models.ImageField(upload_to="media/")    
-    rasm2 = models.ImageField(upload_to="media/")
+    rasm1 = models.ImageField()    
+    rasm2 = models.ImageField()
