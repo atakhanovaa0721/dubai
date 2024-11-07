@@ -1,0 +1,371 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.col-1 {
+    max-width: 50%;
+}
+
+.col-1 h1 {
+    font-size: 2.5em;
+}
+
+.col-1 h2, .col-1 h3 {
+    font-size: 1.5em;
+}
+
+.col-2 {
+    max-width: 30%;
+    position: relative; 
+    margin-top: 250px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 380px;
+}
+
+.card-image {
+    position: absolute;
+    top: -50px; 
+    left: 50px;
+    width: 100px;
+    height: 50px; 
+}
+
+.card-image img {
+    width: 150%;
+    position: relative;
+    border-radius: 300px;
+}
+
+.card-content {
+    margin-top: 80px; /* Rasmning joyini bo'sh qoldirish */
+}
+
+h4{
+    color: black;
+}
+
+
+.completion-info {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgba(52, 152, 219, 0.5); 
+    background-size: cover; 
+    background-position: center;
+}
+
+
+.completion-info img {
+    margin-right: 10px; 
+}
+
+
+.completion-info > h1{
+    font-size: 1rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/*  */
+
+.completion-info2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 200px;
+    height: 36px;
+    background-color: #b1d9ff; 
+    border-radius: 25px;
+}
+
+.completion-info2 > img {
+    margin-right: 10px; 
+    margin-bottom: 3px;
+}
+
+
+.completion-info2 > h1{
+    font-size: .8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+/*  */
+.whatsapp {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 170px;
+    background-color: greenyellow; 
+    border-radius: 5px;
+}
+
+.whatsapp > img {
+    margin-top: -8px;
+}
+
+
+.whatsapp > h2{
+    font-size: 1rem;
+    color: black;
+}
+/*  */
+.Email {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    background-color: white; 
+    border-radius: 5px;
+}
+
+.Email > img {
+    margin-right: 10px; 
+    margin-top: -8px;
+}
+
+
+.Email > h2{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+}
+/*  */
+.y1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 55px;
+    height: 60px;
+    padding-left: 7px;
+    background-color: white; 
+    border-radius: 5px;
+}
+
+.y1 > img {
+    margin-right: 10px; 
+}
+
+
+/*  */
+.matnlar {
+    padding: 50px 20px; 
+    border-radius: 10px; /* Burchaklarni yumshatish */
+    max-width: 1200px; /* Maksimal kenglik */
+    margin: auto;
+}
+
+
+
+h1 {
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+    color: white; 
+}
+
+.matnlar .u > h2 {
+    font-size: 1.3em; 
+    color: white;
+    background-color: gray;
+    margin: 0; 
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.matnlar > div {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 20px; 
+}
+
+p {
+    font-size: 1.4rem; 
+    line-height: 1.5;
+    color: #746f6f;
+    text-align: left; 
+}
+
+
+
+
+.t3 {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Flexbox for each row */
+.t1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Text styles for labels (grey) */
+.t1 h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.t1 h2:first-child {
+    color: grey;
+}
+
+/* Link styles */
+.t1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.3s;
+}
+
+.t1 a:hover {
+    color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 100px; /* Adjusting gap for larger tablets and small laptops */
+    }
+
+    .col-1 {
+        max-width: 60%; /* Allow more space for text on larger tablets */
+    }
+
+    .col-2 {
+        max-width: 40%; /* Adjust column width for better alignment */
+        margin-top: 150px; /* Reduce top margin */
+    }
+
+    .card {
+        width: 80%; /* Make cards responsive to smaller screens */
+        height: auto; /* Allow height to adjust automatically */
+        margin: 0 auto; /* Center cards */
+    }
+
+    .completion-info,
+    .completion-info2,
+    .whatsapp,
+    .Email,
+    .y1 {
+        width: 100%; /* Full width for buttons and containers */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        gap: 50px; /* Reduce gap */
+    }
+
+    .col-1, .col-2 {
+        max-width: 100%; /* Full width for columns */
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .col-1 h1 {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    .col-1 h2, .col-1 h3 {
+        font-size: 1.2em; /* Smaller font sizes for headings */
+    }
+
+    .card {
+        width: 90%; /* Make cards take up more space */
+    }
+
+    p {
+        font-size: 1.2rem; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; /* Smaller main heading */
+    }
+
+    h2 {
+        font-size: 1.1em; /* Smaller secondary heading */
+    }
+
+    .completion-info, .completion-info2, .whatsapp, .Email {
+        flex-direction: column; /* Stack elements vertically */
+        width: auto; /* Allow automatic width */
+    }
+
+    .card {
+        height: auto; /* Allow card height to adjust */
+    }
+
+    .y1 {
+        width: 45px; /* Smaller width for icons */
+        height: 45px; /* Adjust height */
+    }
+
+    .matnlar {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    .matnlar > div {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Space between stacked items */
+    }
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* Chap tomonga joylash */
+    align-items: center; /* Vertikal markazlash */
+    padding: 10px 50px; /* Yuqoridan va pastdan 10px, chapdan va o'ngdan 20px bo'sh joy */
+    background-color: wheat; /* Orqa fon rangi */
+}
+
+.header a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 19px; 
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Responsiv dizayn */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Mobil qurilmalar uchun bo'sh joyni kamaytirish */
+    }
+
+    .header a {
+        font-size: 16px; /* Matn o'lchamini kichraytirish */
+    }
+}

@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>hsproperty.jp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <!-- style-css -->
+    <link rel="stylesheet" href="{% static 'abd3/contact.css'%}">
+
+</head>
+
+<body class="newsPage">
+    <!-- tugadi -->
+    <section class="abd657" id="Con">
+        <div class="ichda">
+            <div class="contact-form">
+                <h2>お問い合わせ一般</h2>
+                <form action="/sms/" method="POST">
+                    <!-- Location -->
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">名:</label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">姓:</label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" placeholder="Your Email" name="email" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電話番号:</label>
+                        <input type="number" id="email" placeholder="Your Phone number" name="email" required
+                            class="dfg">
+                    </div>
+
+                    <label for="location">所在地:<span style="color: red;">*</span></label>
+                    <select id="location" name="location" required>
+                        <option value="abu-dhabi">アブダビ</option>
+                        <option value="dubai">ドバイ</option>
+                        <option value="sharjah">シャルジャ</option>
+                        <option value="ajman">アジュマン</option>
+                        <option value="umm-al-quwain">ウム・アル・クワイン</option>
+                        <option value="fujairah">フジャイラ</option>
+                        <option value="ras-al-khaimah">ラス・アル・ハイマ</option>
+                    </select>
+                    <br>
+                    <!-- Select Category -->
+                    <label for="category">カテゴリを選択:<span style="color: red;">*</span></label>
+                    <select id="category" name="category" required>
+                        <optgroup label="不動産購入">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                            <option value="plot">プロット</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+                    <!-- Property Status -->
+                    <label for="propertyStatus">物件状況:<span style="color: red;">*</span></label>
+                    <select id="propertyStatus" name="propertyStatus" required>
+                        <option value="off-plan">オフプラン:</option>
+                        <option value="completed">完成済み:</option>
+                        <optgroup label="不動産販売">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                            <option value="plot">プロット</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+
+                    <label for="propertyStatus">物件状況:<span style="color: red;">*</span></label>
+                    <select id="propertyStatus" name="propertyStatus" required>
+                        <option value="off-plan">オフプラン</option>
+                        <option value="completed">完成済み</option>
+
+                        <optgroup label="不動産賃貸">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                        </optgroup>
+                        <optgroup label="管理">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+                    <!-- Type of Property -->
+                    <label for="propertyType">物件タイプ:<span style="color: red;">*</span></label>
+                    <select id="propertyType" name="propertyType" required>
+                        <option value="ultraluxury">ウルトララグジュアリー</option>
+                        <option value="luxury">ラグジュアリー</option>
+                        <option value="affordable">アフォーダブル</option>
+                    </select>
+                    <br>
+                    <!-- Bedrooms -->
+                    <label for="bedrooms">寝室数:<span style="color: red;">*</span></label>
+                    <select id="bedrooms" name="bedrooms" required>
+                        <option value="studio">スタジオ</option>
+                        <option value="1-bedroom">1寝室</option>
+                        <option value="2-bedrooms">2寝室</option>
+                        <option value="3-bedrooms">3寝室</option>
+                        <option value="4+bedrooms">4寝室以上</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="message">メッセージ:</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" name="text" required></textarea>
+                    </div>
+
+
+                    <button value="Submit" class="asdf">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091786!2d144.95373631531578!3d-37.817209979751606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5775745b5cf2b6e!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1624600809393!5m2!1sen!2sau"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

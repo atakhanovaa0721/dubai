@@ -1,0 +1,806 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiroyli Sahifa</title>
+    <link rel="stylesheet" href="{% static 'pdfcss/pdf10.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body bgcolor="white">
+    <header class="header">
+        <a href="/project/">出る</a>
+    </header>
+    <section class="hero" style=" background-image: url('{{pdf8home.baground_Rasm.url}}'); ">
+        <div class="col-1" style="margin-top: 150px;">
+            <div class="completion-info">
+                <img src="{{pdf8home.rasm1.url}}" width="35" height="35" alt="Timer Icon">
+                <h1>{{pdf8home.nomi1}}</h1>
+            </div>
+            <h2 style="font-size: 3rem; color: white;">{{pdf8home.nomi2}} <br> {{pdf8home.nomi3}}</h2>
+            <h3 style="color: gray;">{{pdf8home.baytxt}}</h3>
+        </div>
+        <div class="col-2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{pdfhome8.rasm.url}}" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h4>{{pdfhome8.ism_famlya}}</h4>
+                    <h4 style="color: gray;">{{pdfhome8.manzil}}</h4>
+                </div>
+                <div class="completion-info2">
+                    <img src="{{pdfhome8.ikonka1.url}}" width="25" height="25" alt="Timer Icon">
+                    <h1 style="color: rgb(63, 146, 255);">{{pdfhome8.nomi1}}</h1>
+                </div>
+                <br>
+                <div class="t3">
+                    <div class="t1">
+                        <h2 style="color: grey;">{{pdfhome8.nomi2}}</h2>
+                        <h2 style="color: black;">{{pdfhome8.tell_raqami}}</h2>
+                    </div>
+                    <div class="t1">
+                        <h2 style="color: grey;">{{pdfhome8.nomi3}}</h2>
+                        <h2><a href="#" style="color: black;">{{pdfhome8.email_nomi}}</a></h2>
+                    </div>
+                    <div class="t1">
+                        <h2 style="color: grey;">{{pdfhome8.nomi4}}</h2>
+                        <h2><a href="#" style="color: black;">{{pdfhome8.website_nomi}}</a></h2>
+                    </div>
+                    <div class="t1">
+                        <h2 style="color: grey;">{{pdfhome8.nomi5}}</h2>
+                        <h2><a href="#" style="color: black;">{{pdfhome8.instagarm_nomi}}</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons99">
+                <button class="whatsapp99" style="background-color: greenyellow; padding: 15px 25px;">
+                    <a href="#" style="color: black;"><i class="fab fa-whatsapp"></i> {{pdfhome8.ikonka_nomi2}}</a>
+                </button>
+                <button class="email99" style="background-color: white;  padding: 15px 25px;">
+                    <a href="#" style="color: black;"><i class="fas fa-envelope"></i> {{pdfhome8.ikonka_nomi3}}</a>
+                </button>
+                <button class="call99" style="background-color: white;  padding: 15px 28px;">
+                    <a href="#" style="color: black;"><i class="fas fa-phone"></i></a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <main style="background-color: #1d1c1c;">
+        <section class="matnlar">
+            <div class="container">
+                <h1>{{pdfburj8.title}}</h1>
+                <div style="display: flex; gap: 30px;" class="u">
+                    <h2>{{pdfburj8.nomi1}}</h2>
+                    <h2>{{pdfburj8.nomi2}}</h2>
+                    <h2>{{pdfburj8.nomi3}}</h2>
+                    <h2>{{pdfburj8.nomi4}}<br>
+                        {{pdfburj8.nomi5}}</h2>
+                </div><br>
+                <p>{{pdftxt8.text1}}<br>
+                    {{pdftxt8.text2}}<br><br>
+                    {{pdftxt8.nomi1}}<br><br>
+                    {{pdftxt8.text3}}
+                    <br><br>{{pdftxt8.nomi2}}
+                    <br><br>{{pdftxt8.nomi3}}
+                    <br><br>{{pdftxt8.nomi4}}<br><br>
+                    {{pdftxt8.nomi5}}
+                    <br><br>{{pdftxt8.nomi6}}
+                    <br><br>
+                    {{pdftxt8.text4}}<br><br>
+                    {{pdftxt8.text5}}
+                    <br><br>
+                    {{pdftxt8.text6}}
+                    <br><br>
+                    {{pdftxt8.text7}}
+                    <br><br>
+                    {{pdftxt8.text8}}
+                    <br><br>
+                    {{pdftxt8.text9}}
+                </p>
+            </div>
+        </section>
+        <!-- tugadi -->
+    </main>
+
+
+    <section style="background-color: white; padding-top: 5px;">
+        <div class="container"
+            style="display: flex; justify-content: center; align-items: center; margin-left: 30px; gap: none;">
+            <div class="col" style="margin-left: 30px;">
+                <img src="{{pdfimg8.img1.url}}" alt="Dubai" width="740" height="350">
+                <img src="{{pdfimg8.img2.url}}" alt="Dubai" width="740" height="350">
+            </div>
+            <div class="col" style="margin-right: 30px;">
+                <img src="{{pdfimg8.img3.url}}" alt="Dubai" width="740" height="350">
+                <img src="{{pdfimg8.img4.url}}" alt="Di" width="740" height="350">
+            </div>
+        </div>
+    </section>
+    <!-- 2chsi -->
+    <section style="background-color: white; padding-top: 5px;">
+        <div class="container"
+            style="display: flex; justify-content: center; align-items: center; margin-left: 30px; gap: none;">
+            <div class="col" style="margin-left: 30px;">
+                <img src="{{pdfimg8.img5.url}}" alt="Dubai" width="740" height="350">
+                <img src="{{pdfimg8.img6.url}}" alt="Dubai" width="740" height="350">
+            </div>
+            <div class="col" style="margin-right: 30px;">
+                <img src="{{pdfimg8.img7.url}}" alt="Dubai" width="740" height="350">
+                <img src="{{pdfimg8.img8.url}}" alt="Di" width="740" height="350">
+            </div>
+        </div>
+    </section>
+    <!-- location -->
+    <div class="container2">
+        <div id="map">
+            <h2>Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3620.4624699355018!2d55.139103299999995!3d24.848049699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUwJzUzLjAiTiA1NcKwMDgnMjAuOCJF!5e0!3m2!1sru!2s!4v1730803561802!5m2!1sru!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <style>
+                .container2 {
+                    text-align: center;
+                    background-color: white;
+                }
+
+
+                .location-header {
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                }
+
+                .container2 h2 {
+                    color: rgb(71, 70, 70);
+                    font-size: 2.5rem;
+                    position: absolute;
+                }
+
+                #map {
+                    margin-bottom: 20px;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 450px;
+                    border: none;
+                }
+            </style>
+        </div>
+    </div>
+    <!-- location the end -->
+    <section style="background-color: white;">
+        <div class="container" style="margin-left: 60px;">
+            <img src="{{rasm8pdf.rasm.url}}" width="1485" height="700" alt="">
+        </div>
+    </section>
+
+    <section class="kshon2">
+        <div class="no231">
+            <h1>施設</h1>
+            <div class="sec3">
+                {% for i in pdfcard9 %}
+                <div class="set3">
+                    <img src="{{i.rasm.url}}" alt="" width="300" height="250">
+                    <h4>{{i.nomi}}</h4>
+                    <p>{{i.text}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <style>
+        .kshon2 {
+            background-color: white;
+            padding: 40px 0px;
+        }
+
+        .no231 {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .kshon2 h1 {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 2.5rem;
+            color: #444;
+        }
+
+        .sec3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .set3 {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            width: calc(25% - 20px);
+        }
+
+        .set3 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .set3 h4 {
+            margin: 15px 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 1.25rem;
+            color: black;
+        }
+
+        .set3 p {
+            font-size: 0.9rem;
+            color: #666;
+            justify-content: left;
+            display: flex;
+        }
+    </style>
+    <div style="display: flex;">
+        <section class="sect2">
+            <div class="payment-plan-container">
+                <h1>支払いプラン</h1>
+                <div class="payment-plan-card">
+                    <div class="icon-title">
+                        <div class="icon">
+                            <span>🌙</span>
+                        </div>
+                        <h2>支払いプラン</h2>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment-row">
+                            <span>30%支払い</span>
+                            <span>予約時</span>
+                        </div>
+                        <div class="payment-row">
+                            <span>40%支払い</span>
+                            <span>建設中</span>
+                        </div>
+                        <div class="payment-row">
+                            <span>30%支払い</span>
+                            <span>引き渡し時</span>
+                        </div>
+                        <div class="condition-row">
+                            <span>ユニット再販の条件</span>
+                            <span class="highlight">30+4%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect2" style="margin-top: 115px;">
+            <div class="payment-plan-container">
+                <div class="payment-plan-card">
+                    <div class="icon-title">
+                        <div class="icon">
+                            <span>🌙</span>
+                        </div>
+                        <h2>建物14の支払いプラン</h2>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment-row">
+                            <span>30%支払い</span>
+                            <span>予約時</span>
+                        </div>
+                        <div class="payment-row">
+                            <span>40%支払い</span>
+                            <span>建設中</span>
+                        </div>
+                        <div class="payment-row">
+                            <span>30%支払い</span>
+                            <span>引き渡し時</span>
+                        </div>
+                        <div class="condition-row">
+                            <span>ユニット再販の条件</span>
+                            <span class="highlight">30+4%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        .sect2 {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-left: 35px;
+        }
+
+        .payment-plan-container h1 {
+            text-align: left;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .payment-plan-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .icon-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .payment-details {
+            padding-top: 15px;
+        }
+
+        .payment-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .condition-row {
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #e74c3c;
+        }
+    </style>
+    <div class="container7" style="padding-left: 100px;">
+        <h1>典型的なユニットと価格</h1>
+        <div class="card-container7">
+            {% for i in pdfcard0 %}
+            <div class="card7">
+                <img src="{{i.rasm.url}}" alt="2 Bedroom">
+                <div style="display: flex; gap: 25px;">
+                    <h4 style="background-color: wheat; padding: 5px 20px; border-radius: 5px;">{{i.nomi1}}</h4>
+                    <h4 style="background-color: wheat; padding: 5px 20px; border-radius: 5px;">{{i.nomi2}}</h4>
+                </div>
+                <div style="display: flex; gap: 20px;">
+                    <div class="price-range">{{i.text1}}</div>
+                    <div class="price-range">{{i.text2}}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <style>
+        .container7 {
+            text-align: center;
+            max-width: 1200px;
+            padding: 20px;
+            margin-left: 100px;
+        }
+
+        .container7 h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: black;
+            margin-left: 70px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+        }
+
+        .card-container7 {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card7 {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card7 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card7 h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .price7 {
+            font-size: 1.4em;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+
+        .price-range7 {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .area7 {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+
+    <section class="Haqda">
+        <div class="contaiiner">
+            <div class="roww" style="display: flex; justify-content: center; gap: 160px; padding-top: 40px;">
+                <div class="col">
+                    <h1 style="color: black; font-size: 3rem; width: 450px;">質問がありますか？ご連絡ください.</h1>
+                    <br><br><br><br><br>
+                    <div class="card99">
+                        <div class="profile-image99">
+                            <img src="{{pdfpast0.rasm1.url}}" alt="Sardorbek Matmusaev">
+                        </div>
+                        <div class="info99">
+                            <h2>Sardorbek Matmusaev</h2>
+                            <p><strong>電話</strong> <span>971523279101</span></p>
+                            <p><strong>メール</strong> <span>sardorbek.s@hsproperties.ae</span></p>
+                            <p><strong>インスタグラム</strong> <span>@sardorbek</span></p>
+                            <div class="contact-buttons99">
+                                <button class="whatsapp99">
+                                    <a href="#"><i class="fab fa-whatsapp"></i> ワッツアップ</a>
+                                </button>
+                                <button class="email99">
+                                    <a href="#"><i class="fas fa-envelope"></i> メール</a>
+                                </button>
+                                <button class="call99">
+                                    <a href="#"><i class="fas fa-phone"></i></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="{{pdfpast0.rasm2.url}}" alt="" width="400" height="600" style="border-radius: 15px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .card99 {
+            display: flex;
+            align-items: center;
+            background-color: wheat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            max-width: 90%;
+        }
+
+        .profile-image99 img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .info99 {
+            flex: 1;
+        }
+
+        .info99 h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info99 p {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .info99 p strong {
+            font-weight: bold;
+        }
+
+        .contact-buttons99 {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .contact-buttons99 button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-buttons99 button i {
+            margin-right: 5px;
+            font-size: 1.2rem;
+        }
+
+        .contact-buttons99 button a {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+
+
+    <section class="abd657" id="Con">
+        <div class="ichda">
+            <div class="contact-form">
+                <h2>お問い合わせ一般</h2>
+                <form action="/sms/" method="POST">
+                    <!-- Location -->
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">名:</label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">姓:</label>
+                        <input type="text" id="name" placeholder="Your Name" name="name" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" placeholder="Your Email" name="email" required class="dfg">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電話番号:</label>
+                        <input type="number" id="email" placeholder="Your Phone number" name="email" required
+                            class="dfg">
+                    </div>
+
+                    <label for="location">所在地:<span style="color: red;">*</span></label>
+                    <select id="location" name="location" required>
+                        <option value="abu-dhabi">アブダビ</option>
+                        <option value="dubai">ドバイ</option>
+                        <option value="sharjah">シャルジャ</option>
+                        <option value="ajman">アジュマン</option>
+                        <option value="umm-al-quwain">ウム・アル・クワイン</option>
+                        <option value="fujairah">フジャイラ</option>
+                        <option value="ras-al-khaimah">ラス・アル・ハイマ</option>
+                    </select>
+                    <br>
+                    <!-- Select Category -->
+                    <label for="category">カテゴリを選択:<span style="color: red;">*</span></label>
+                    <select id="category" name="category" required>
+                        <optgroup label="不動産購入">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                            <option value="plot">プロット</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+                    <!-- Property Status -->
+                    <label for="propertyStatus">物件状況:<span style="color: red;">*</span></label>
+                    <select id="propertyStatus" name="propertyStatus" required>
+                        <option value="off-plan">オフプラン:</option>
+                        <option value="completed">完成済み:</option>
+                        <optgroup label="不動産販売">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                            <option value="plot">プロット</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+
+                    <label for="propertyStatus">物件状況:<span style="color: red;">*</span></label>
+                    <select id="propertyStatus" name="propertyStatus" required>
+                        <option value="off-plan">オフプラン</option>
+                        <option value="completed">完成済み</option>
+
+                        <optgroup label="不動産賃貸">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                        </optgroup>
+                        <optgroup label="管理">
+                            <option value="villa">ヴィラ</option>
+                            <option value="apartment">アパート</option>
+                            <option value="town-house">タウンハウス</option>
+                            <option value="mansion">マンション</option>
+                        </optgroup>
+
+                    </select>
+                    <br>
+                    <!-- Type of Property -->
+                    <label for="propertyType">物件タイプ:<span style="color: red;">*</span></label>
+                    <select id="propertyType" name="propertyType" required>
+                        <option value="ultraluxury">ウルトララグジュアリー</option>
+                        <option value="luxury">ラグジュアリー</option>
+                        <option value="affordable">アフォーダブル</option>
+                    </select>
+                    <br>
+                    <!-- Bedrooms -->
+                    <label for="bedrooms">寝室数:<span style="color: red;">*</span></label>
+                    <select id="bedrooms" name="bedrooms" required>
+                        <option value="studio">スタジオ</option>
+                        <option value="1-bedroom">1寝室</option>
+                        <option value="2-bedrooms">2寝室</option>
+                        <option value="3-bedrooms">3寝室</option>
+                        <option value="4+bedrooms">4寝室以上</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="message">メッセージ:</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" name="text" required></textarea>
+                    </div>
+
+
+                    <button value="Submit" class="asdf">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3620.4624699355018!2d55.139103299999995!3d24.848049699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUwJzUzLjAiTiA1NcKwMDgnMjAuOCJF!5e0!3m2!1sru!2s!4v1730803561802!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* General container styling */
+        .abd657 {
+            padding: 20px;
+            background-color: #f0f0f0;
+            /* Light gray background */
+        }
+
+        /* Inner container for flex layout */
+        .ichda {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow wrapping of items */
+            gap: 20px;
+            /* Space between items */
+            max-width: 1200px;
+            /* Maximum width */
+            margin: 0 auto;
+            /* Center the container */
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            flex: 1 1 500px;
+            /* Allow form to grow and shrink with a minimum width */
+            background-color: #fff;
+            /* White background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            /* Dark gray color for the heading */
+        }
+
+        /* Form group styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Input and select styles */
+
+        .ichda input[type="text"],
+        .ichda input[type="email"],
+        .ichda input[type="number"],
+        .ichda select,
+        .ichda textarea {
+            width: 100%;
+            /* Full width */
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            /* Light gray border */
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            /* Slightly lighter background for inputs */
+            color: #333;
+        }
+
+        /* Button styling */
+        .asdf {
+            width: 100%;
+            /* Full width */
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            /* Button color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Smooth background color change */
+        }
+
+        .asdf:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+
+        /* Map container styling */
+        .map-container {
+            flex: 1 1 500px;
+            /* Allow the map to grow and shrink with a minimum width */
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            /* White background */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .ichda {
+                flex-direction: column;
+                /* Stack items vertically */
+            }
+
+            .contact-form,
+            .map-container {
+                flex: 1 1 100%;
+                /* Full width for smaller screens */
+            }
+        }
+    </style>
+</body>
+
+
+</html>
