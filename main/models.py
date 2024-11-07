@@ -5,7 +5,7 @@ class Home(models.Model):
     nomi1 = models.CharField(max_length=100)
     nomi2 = models.CharField(max_length=100)
     text = models.TextField()
-    rasm = models.ImageField()
+    rasm = models.ImageField(upload_to="")
     
     def __str__(self):
         return self.nomi1
@@ -24,7 +24,7 @@ class Card(models.Model):
     estate = models.CharField(max_length=200)
     text = models.TextField()
     cap = models.CharField(max_length=200)
-    rasm = models.ImageField()
+    rasm = models.ImageField(upload_to="")
     def __str__(self):
         return self.emad
 
@@ -36,7 +36,7 @@ class Legal(models.Model):
     text1 = models.TextField()
     text2 = models.TextField()
     text3 = models.TextField()
-    rasm = models.ImageField()
+    rasm = models.ImageField(upload_to="")
     def __str__(self):
         return self.nomi
     
@@ -56,7 +56,7 @@ class SMS(models.Model):
     
 class Projecti_Home(models.Model):
     title = models.CharField(max_length=200)
-    img = models.ImageField()
+    img = models.ImageField(upload_to="")
     
     def __str__(self):
         return self.title
